@@ -1,0 +1,19 @@
+/* Auto layout */
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.navList {
+  width: 1200px;
+  height: 99px;
+}
+
+/* Inside auto layout */
+.navItem {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
