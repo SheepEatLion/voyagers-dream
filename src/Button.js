@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 
 function Button({text, type}) {
   let className;
-  console.log(type);
+
   switch (type) {
     case 'dark':
       className = `${styles.btn} ${styles.btn_dark}`;
