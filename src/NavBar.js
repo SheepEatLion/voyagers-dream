@@ -1,14 +1,15 @@
 import React from "react";
 import {BrowserRouter, Link} from 'react-router-dom';
+import homeImage from './assets/home.png';
 import styles from './NavBar.module.css';
 
 const NavBar = () => {
   return (
       <BrowserRouter>
-      <nav className={styles.navContainer}>
-        <div className={styles.navbar_logo}>
-          <Link to="/">Home</Link>
-        </div>
+      <nav className={styles.nav_container}>
+        <Link to="/">
+          <img src={homeImage} alt={"home"} className={styles.home_link}/>
+        </Link>
         <ul className={styles.navbar_ul}>
           <li className={styles.navbar_li}><Link to="/mercury">Mercury</Link></li>
           <li className={styles.navbar_li}><Link to="/venus">Venus</Link></li>
