@@ -16,7 +16,6 @@ function Button({text, type}) {
       break;
   }
 
-  console.log(className);
   return <button className={className}>
     {text}
   </button>;
