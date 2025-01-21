@@ -16,10 +16,11 @@
 .home_link {
   width: 30px; /* 원하는 초기 크기 */
   height: auto; /* 가로 세로 비율을 유지 */
+  justify-content: space-between;
 }
 
 @media (max-width: 600px) {
-  .home-link { width: 50px; /* 화면 크기가 600px 이하일 때 이미지 크기 조절 */ }
+  .home-link { width: 15px; /* 화면 크기가 600px 이하일 때 이미지 크기 조절 */ }
 }
 
 .navbar_ul {
