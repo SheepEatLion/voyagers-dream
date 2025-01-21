@@ -1,19 +1,26 @@
-/* Auto layout */
 .navContainer {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0;
+  background-color: white;
 }
 
-.navList {
-  width: 1200px;
-  height: 99px;
-}
-
-/* Inside auto layout */
-.navItem {
+.navbar_li {
   flex: none;
   order: 0;
   flex-grow: 0;
+  padding: 8px 12px;
 }
+
+.navbar_logo{
+  font-size: 20px;
+}
+
+.navbar_ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+
