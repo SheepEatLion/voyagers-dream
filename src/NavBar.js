@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter, Link} from 'react-router-dom';
 import homeImage from './assets/home.png';
 import styles from './NavBar.module.css';
+import Button from "./Button";
 
 const NavBar = () => {
   return (
@@ -19,6 +20,8 @@ const NavBar = () => {
           <li className={styles.navbar_li}><Link to="/saturn">Saturn</Link></li>
           <li className={styles.navbar_li}><Link to="/uranus">Uranus</Link></li>
           <li className={styles.navbar_li}><Link to="/neptune">Neptune</Link></li>
+          <Button text={"Sign in"} type={"light"}></Button>
+          <Button text={"Register"} type={"dark"}></Button>
         </ul>
       </nav>
       </BrowserRouter>
