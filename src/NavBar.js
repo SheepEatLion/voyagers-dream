@@ -12,14 +12,14 @@ const NavBar = () => {
           <img src={homeImage} alt={"home"} className={styles.home_link}/>
         </Link>
         <ul className={styles.navbar_ul}>
-          <li className={styles.navbar_li}><Link to="/mercury">Mercury</Link></li>
-          <li className={styles.navbar_li}><Link to="/venus">Venus</Link></li>
-          <li className={styles.navbar_li}><Link to="/earth">Earth</Link></li>
-          <li className={styles.navbar_li}><Link to="/mars">Mars</Link></li>
-          <li className={styles.navbar_li}><Link to="/jupiter">Jupiter</Link></li>
-          <li className={styles.navbar_li}><Link to="/saturn">Saturn</Link></li>
-          <li className={styles.navbar_li}><Link to="/uranus">Uranus</Link></li>
-          <li className={styles.navbar_li}><Link to="/neptune">Neptune</Link></li>
+          <li className={styles.navbar_li}><Link to="/mercury" className={styles.nav_link}>Mercury</Link></li>
+          <li className={styles.navbar_li}><Link to="/venus" className={styles.nav_link}>Venus</Link></li>
+          <li className={styles.navbar_li}><Link to="/earth" className={styles.nav_link}>Earth</Link></li>
+          <li className={styles.navbar_li}><Link to="/mars" className={styles.nav_link}>Mars</Link></li>
+          <li className={styles.navbar_li}><Link to="/jupiter" className={styles.nav_link}>Jupiter</Link></li>
+          <li className={styles.navbar_li}><Link to="/saturn" className={styles.nav_link}>Saturn</Link></li>
+          <li className={styles.navbar_li}><Link to="/uranus" className={styles.nav_link}>Uranus</Link></li>
+          <li className={styles.navbar_li}><Link to="/neptune" className={styles.nav_link}>Neptune</Link></li>
           <Button text={"Sign in"} type={"light"}></Button>
           <Button text={"Register"} type={"dark"}></Button>
         </ul>

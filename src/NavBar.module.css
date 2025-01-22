@@ -7,10 +7,15 @@
 }
 
 .navbar_li {
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  text-align: center;
+  background-color: #F5F5F5;
   padding: 8px 12px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
 }
 
 .home_link {
