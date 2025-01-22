@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Link} from 'react-router-dom';
-import homeImage from './assets/home.png';
+import homeImage from './assets/Mars_surface.png';
 import styles from './NavBar.module.css';
 import Button from "./Button";
 
