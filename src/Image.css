@@ -1,10 +1,15 @@
 .image_container {
   width: 100%; /* 부모 요소의 100%를 차지하도록 설정 */
+  height: 0;
+  padding-bottom: 66.66%; /* 3:1 비율을 맞추기 위해 패딩 사용 */
+  position: relative;
 }
 
 .responsive_image {
+  position: absolute; /* 절대 위치 설정 */
+  top: 0;
+  left: 0;
   width: 100%; /* 이미지의 가로 길이를 부모 요소의 100%로 설정 */
-  height: 0;
-  padding-bottom: 33.33%; /* 3:1 비율을 맞추기 위해 패딩 사용 */
-  object-fit: cover; /* 이미지가 비율을 유지하면서 컨테이너에 맞게 조정 */
+  height: 100%; /* 이미지의 세로 길이를 부모 요소의 100%로 설정 */
+  object-fit: contain; /* 이미지가 비율을 유지하면서 컨테이너에 맞게 조정 */
 }
