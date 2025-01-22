@@ -7,8 +7,9 @@
 }
 
 .navbar_li {
+  font-weight: normal;
+  font-family: 'HeroBold', sans-serif;
   text-align: center;
-  background-color: #F5F5F5;
   padding: 8px 12px;
 }
 
