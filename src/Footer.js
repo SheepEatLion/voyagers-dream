@@ -1,20 +1,35 @@
 import React from 'react';
 import './Footer.css';
+import instagram from './assets/icon_instagram.png';
+import youtube from './assets/icon_youtube.png';
+import linkedin from './assets/icon_linkedin.png';
+import blog from './assets/icon_blog.png';
+import {BrowserRouter, Link} from "react-router-dom";
 
 const Footer = () => {
   return (
       <footer className="footer-container">
         <div className="footer-column social-media">
-          <h4>Follow Us</h4>
+          <p className="footer-subtitle">Follow Us</p>
           <div className="icons">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <BrowserRouter>
+              <Link to="https://instagram.com">
+                <img src={instagram} alt={"home"} className={"image_link"}/>
+              </Link>
+              <Link to="https://youtube.com">
+                <img src={youtube} alt={"home"} className={"image_link"}/>
+              </Link>
+              <Link to="https://linkedin.com">
+                <img src={linkedin} alt={"home"} className={"image_link"}/>
+              </Link>
+              <Link to="https://junyeong.vercel.app">
+                <img src={blog} alt={"home"} className={"image_link"}/>
+              </Link>
+            </BrowserRouter>
           </div>
         </div>
         <div className="footer-column">
-          <h4>Use cases</h4>
+          <p className="footer-subtitle">Use cases</p>
           <ul>
             <li>UI design</li>
             <li>UX design</li>
@@ -26,7 +41,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Explore</h4>
+          <p className="footer-subtitle">Explore</p>
           <ul>
             <li>Design</li>
             <li>Prototyping</li>
@@ -38,7 +53,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4>Resources</h4>
+          <p className="footer-subtitle">Resources</p>
           <ul>
             <li>Blog</li>
             <li>Best practices</li>

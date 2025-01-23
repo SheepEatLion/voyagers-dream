@@ -1,9 +1,9 @@
 .footer-container {
   display: flex;
   justify-content: space-around;
-  background-color: #333;
-  color: white;
-  padding: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px;
 }
 
 .footer-column {
@@ -23,7 +23,7 @@
 }
 
 .footer-column li {
-  margin: 5px 0;
+  margin: 5px 0 10px;
 }
 
 .icons {
@@ -31,8 +31,18 @@
   gap: 10px;
 }
 
-.icons a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
+.image_link {
+  width: 20px; /* 원하는 초기 크기 */
+  height: auto; /* 가로 세로 비율을 유지 */
+  justify-content: space-between;
+}
+
+.horizontal-line {
+  border-top: 2px solid #000; /* 두께와 색상 설정 */
+  width: 100%; /* 너비 설정 */
+  margin: 20px 0; /* 상하 마진 설정 */
+}
+
+.footer-subtitle {
+  font-weight: bold;
 }
