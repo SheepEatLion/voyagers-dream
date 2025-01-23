@@ -16,6 +16,7 @@ function App() {
         <Text title="Voyager's Dream" subtitle="Photo from the Cosmos"></Text>
         <Image src={sample} alt="sample"></Image>
         <Panel image1={sample1} image2={sample2}></Panel>
+        <hr></hr>
         <Footer></Footer>
       </div>
   );
